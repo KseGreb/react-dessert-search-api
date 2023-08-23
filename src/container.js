@@ -1,4 +1,3 @@
-import ShowRecipes from "./showRecipes"
 
 function Container({inputInfo, setInputInfo, searchInfo}){
 
