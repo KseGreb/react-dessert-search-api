@@ -1,21 +1,23 @@
-import ShowRecipes from "./showRecipes"
+import {useState } from 'react';
 
-function Container({inputInfo, setInputInfo, searchInfo}){
+function Container({searchInfo}){
+
+    const [input, setInput] = useState("");
 
 const typeYourDrink = (e) =>{
-    setInputInfo(e.target.value)
+    setInput(e.target.value)
     }
 
 const finalSearch = (e)=>{
     e.preventDefault();
-    searchInfo(inputInfo)
+    searchInfo(input)
 }
 
     return(
         <div className="container">
 
         <form onSubmit={finalSearch}>
-            <input onChange={typeYourDrink} value={inputInfo} placeholder="Type your dessert..."></input>
+            <input onChange={typeYourDrink} value={input} placeholder="Type your dessert..."></input>
         </form>
 
         <button onClick={finalSearch}>Search</button>

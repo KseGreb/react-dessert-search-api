@@ -1,15 +1,15 @@
 import { useEffect, useState } from 'react';
 import './App.css';
-import Container from './container';
-import ShowRecipes from './showRecipes';
-import VideoBG from './videoBG';
+import Container from './Container';
+import ShowRecipes from './ShowRecipes';
+import VideoBG from './VideoBG';
 
 function App() {
 
 const My_ID = "b9a5c076";
 const My_Key = "bdbba1a4994220e08fa4735c5c484ce5";
 
-const [input, setInput] = useState("");
+
 const [recipe, setRecipe] = useState([]);
 const [typeWord, setTypeWord] = useState("chocolate");
 
@@ -26,7 +26,7 @@ useEffect(()=>{
   return (
     <div className="App">
       <VideoBG/>
-      <Container inputInfo = {input} setInputInfo = {setInput} searchInfo = {setTypeWord}/>
+      <Container searchInfo = {setTypeWord}/>
     <div className="container">
       {recipe.map((element, index )=>(
         <ShowRecipes key={index}
