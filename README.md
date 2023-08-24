@@ -1,3 +1,4 @@
-<img width="1187" alt="Screen Shot 2023-08-23 at 5 15 32 PM" src="https://github.com/KseGreb/react-dessert-search-api/assets/110953599/f4b545ea-b0c1-4712-924a-e2577a403995">
+
+![react-dessert](https://github.com/KseGreb/react-dessert-search-api/assets/110953599/e755017f-42a6-4f8b-b861-15ecdc03c8a3)
 
 https://got-a-sweet-tooth.netlify.app/
